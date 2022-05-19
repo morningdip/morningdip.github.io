@@ -1,0 +1,117 @@
+title: MorningDip
+email: morningdip@hotmail.com
+description: Jekyll version of the blog theme Gungnir.
+url: "https://morningdip.github.io"
+baseurl: ""
+avatar: "img/header-avatar.png"
+
+# GitHub repository
+repository:  morningdip/morningdip.github.io
+repository_branch: main
+
+# Theme style settings
+theme_style:
+  highlight: "dark"
+  alert: "flat"
+  post_preview: "image"
+
+# Markdown enhancements settings
+math:
+  enable: true
+  engine: "katex"
+
+chart: true
+mermaid: true
+
+# CDN settings
+cdn:
+  source: "jsdelivr"
+  enable: false
+
+# Publish posts or collection documents with a future date.
+future: true
+
+collections:
+  experiences:
+    output: true
+  publications:
+    output: true
+  projects:
+    output: true
+
+# SNS settings
+sns:
+  RSS: true
+  github_username: morningdip
+  weibo_username: 
+  zhihu_username: 
+  twitter_username: morningdip
+  facebook_username: 
+  linkedin_username: yunghanchen
+  email_address: morningdip@hotmail.com
+
+# Build settings
+permalink: pretty
+paginate: 10
+exclude:
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE
+  - Gruntfile.js
+  - Gemfile
+  - Gemfile.lock
+  - /node_modules
+anchorjs: true
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jemoji
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+# Navigation menu settings
+menus:
+  - title: Home
+    font: fab fa-fort-awesome
+    url: /
+  - title: About
+    font: fas fa-paw
+    url: /about/
+  - title: Archive
+    font: fas fa-archive
+    url: /archive/
+  - title: Links
+    font: fas fa-link
+    url: /links/
+
+# Comment settings
+comment:
+  provider: gitalk
+
+  # Disqus settings
+  disqus_username: morningdip
+
+  # Gitalk settings
+  gitalk:
+    clientID: 'a99b9dd2c4ec1f1e6b30'
+    clientSecret: '094ae401509f49968ffb5f2808798b03d5e4561e'
+    repo: gitalk-comments
+    owner: morningdip
+    admin:
+      - morningdip
+
+  # Valine settings
+  valine:
+    appID:
+    appKey:
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
