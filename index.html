@@ -32,12 +32,6 @@ header-img:
           <h3 class="post-subtitle">{{ post.subtitle }}</h3>
           {% endif %}
         </a>
-        <p class="post-content-preview">
-          {% if post.lang == "en" %}
-            {{ post.content | strip_html | truncate:200 }}
-          {% else %}
-            {{ post.excerpt | strip_html | truncate:100 }}
-          {% endif %}
         </p>
       </div>
     </div>
@@ -54,7 +48,7 @@ header-img:
           {% if post.lang == "en" %}
             {{ post.content | strip_html | truncate:300 }}
           {% else %}
-            {{ post.excerpt | strip_html | truncate:200 }}
+            {{ post.content | strip_html | truncate:200 }}
           {% endif %}
         </div>
       </a>
