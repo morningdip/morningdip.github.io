@@ -32,7 +32,6 @@ header-img:
           <h3 class="post-subtitle">{{ post.subtitle }}</h3>
           {% endif %}
         </a>
-        </p>
       </div>
     </div>
 
@@ -53,7 +52,7 @@ header-img:
         </div>
       </a>
       <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        {{ post.date | date: "%B %-d, %Y" }}
       </p>
     </div>
     <hr>
